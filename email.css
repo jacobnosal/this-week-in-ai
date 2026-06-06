@@ -1,0 +1,214 @@
+/* This Week in AI — newsletter email styles
+   Render: pandoc <file>.md -o out.html --standalone --css email.css --embed-resources --metadata title="This Week in AI"
+   Copy rendered output from browser → paste into Outlook. */
+
+html {
+  background: #f0f5ff;
+}
+
+body {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #1f2937;
+  background: #ffffff;
+  max-width: 660px;
+  margin: 32px auto;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 4px 20px rgba(0,0,0,0.05);
+  hyphens: none;
+}
+
+/* ── Header ───────────────────────────────────────────── */
+
+h1 {
+  background: #eff6ff;
+  color: #1e3a8a;
+  margin: 0;
+  padding: 30px 32px 24px;
+  font-size: 1.4em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  border-top: 5px solid #3b82f6;
+  border-bottom: 1px solid #dbeafe;
+}
+
+/* "Distributed to / Prepared by" — same <p> right after h1 */
+h1 + p {
+  font-size: 0.8em;
+  color: #6b7280;
+  background: #f8faff;
+  margin: 0;
+  padding: 10px 32px 16px;
+  line-height: 1.8;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* ── Content padding ──────────────────────────────────── */
+
+h2, p, ul, blockquote, table, hr {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* ── Section headers ──────────────────────────────────── */
+
+h2 {
+  font-size: 0.7em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: #1e40af;
+  background: #eff6ff;
+  padding: 7px 12px;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+  border-left: 3px solid #3b82f6;
+  border-radius: 0 4px 4px 0;
+}
+
+/* ── At a Glance (blockquote right after h2) ──────────── */
+
+h2 + blockquote {
+  background: #eff6ff;
+  border-left: 3px solid #3b82f6;
+  border-radius: 0 6px 6px 0;
+  padding: 14px 18px;
+  margin-top: 0;
+  margin-bottom: 1.25em;
+  color: #1e3a8a;
+}
+
+h2 + blockquote p {
+  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-style: normal;
+  line-height: 1.65;
+}
+
+/* ── Why it matters callouts ──────────────────────────── */
+
+blockquote {
+  background: #f0fdf4;
+  border-left: 3px solid #34d399;
+  border-radius: 0 6px 6px 0;
+  padding: 10px 16px;
+  margin-top: 6px;
+  margin-bottom: 1em;
+  color: #064e3b;
+}
+
+blockquote p {
+  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-style: normal;
+  line-height: 1.55;
+}
+
+blockquote strong {
+  color: #065f46;
+}
+
+/* ── Body text ────────────────────────────────────────── */
+
+p {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+p > strong:first-child {
+  color: #111827;
+}
+
+p > em:only-child {
+  color: #9ca3af;
+  font-size: 0.88em;
+}
+
+/* ── Dividers ─────────────────────────────────────────── */
+
+hr {
+  background: transparent;
+  border: none;
+  border-top: 1px solid #eff6ff;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* ── What to Watch list ───────────────────────────────── */
+
+ul {
+  padding-left: 1.25em;
+  margin-top: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+li {
+  margin: 0.35em 0;
+  color: #374151;
+}
+
+/* ── Links ────────────────────────────────────────────── */
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ── Tables ───────────────────────────────────────────── */
+
+table {
+  border-collapse: collapse;
+  width: calc(100% - 64px);
+  font-size: 0.88em;
+  margin-top: 0.75em;
+  margin-bottom: 1.25em;
+  display: table;
+}
+
+th {
+  background: #1e40af;
+  color: #ffffff;
+  padding: 9px 13px;
+  text-align: left;
+  font-size: 0.84em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+td {
+  padding: 8px 13px;
+  border-bottom: 1px solid #eff6ff;
+  vertical-align: top;
+}
+
+tr:nth-child(even) td {
+  background: #f8faff;
+}
+
+/* ── Footer ───────────────────────────────────────────── */
+
+hr:last-of-type + p {
+  font-size: 0.8em;
+  color: #9ca3af;
+  padding-bottom: 28px;
+}
+
+/* ── Inline code ──────────────────────────────────────── */
+
+code {
+  font-family: "SF Mono", "Fira Code", Consolas, monospace;
+  font-size: 0.86em;
+  background: #eff6ff;
+  color: #1e40af;
+  padding: 1px 5px;
+  border-radius: 3px;
+}

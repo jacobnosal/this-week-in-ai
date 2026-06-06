@@ -1,0 +1,5 @@
+{
+  "provider": "perplexity",
+  "searchProvider": "perplexity",
+  "perplexityApiKey": "${PERPLEXITY_API_KEY}"
+}

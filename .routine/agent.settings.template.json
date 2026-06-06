@@ -1,0 +1,9 @@
+{
+  "packages": [
+    "npm:pi-web-access",
+    "npm:pi-subagents"
+  ],
+  "quietStartup": true,
+  "defaultProvider": "anthropic",
+  "defaultModel": "${FEYNMAN_DEFAULT_MODEL:-claude-opus-4-7}"
+}
