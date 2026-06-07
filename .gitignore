@@ -1,5 +1,6 @@
 research/
 outputs/
+papers/
 .feynman/
 *.local
 .claude/
