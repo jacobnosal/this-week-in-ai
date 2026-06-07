@@ -1,4 +1,8 @@
 research/
+outputs/
+papers/
 .feynman/
 *.local
 .claude/
+progress.md
+notes/
