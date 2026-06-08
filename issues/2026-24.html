@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>This Week in AI</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+html {
+background: #f0f5ff;
+}
+body {
+font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+font-size: 15px;
+line-height: 1.7;
+color: #1f2937;
+background: #ffffff;
+max-width: 660px;
+margin: 32px auto;
+padding: 0;
+border-radius: 8px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 4px 20px rgba(0,0,0,0.05);
+hyphens: none;
+}
+
+h1 {
+background: #eff6ff;
+color: #1e3a8a;
+margin: 0;
+padding: 30px 32px 24px;
+font-size: 1.4em;
+font-weight: 700;
+letter-spacing: -0.01em;
+line-height: 1.3;
+border-top: 5px solid #3b82f6;
+border-bottom: 1px solid #dbeafe;
+}
+
+h1 + p {
+font-size: 0.8em;
+color: #6b7280;
+background: #f8faff;
+margin: 0;
+padding: 10px 32px 16px;
+line-height: 1.8;
+border-bottom: 1px solid #e5e7eb;
+}
+
+h2, p, ul, blockquote, table, hr {
+margin-left: 32px;
+margin-right: 32px;
+}
+
+h2 {
+font-size: 0.7em;
+font-weight: 800;
+text-transform: uppercase;
+letter-spacing: 0.13em;
+color: #1e40af;
+background: #eff6ff;
+padding: 7px 12px;
+margin-top: 2em;
+margin-bottom: 0.8em;
+border-left: 3px solid #3b82f6;
+border-radius: 0 4px 4px 0;
+}
+
+h2 + blockquote {
+background: #eff6ff;
+border-left: 3px solid #3b82f6;
+border-radius: 0 6px 6px 0;
+padding: 14px 18px;
+margin-top: 0;
+margin-bottom: 1.25em;
+color: #1e3a8a;
+}
+h2 + blockquote p {
+margin: 0;
+margin-left: 0;
+margin-right: 0;
+font-style: normal;
+line-height: 1.65;
+}
+
+blockquote {
+background: #f0fdf4;
+border-left: 3px solid #34d399;
+border-radius: 0 6px 6px 0;
+padding: 10px 16px;
+margin-top: 6px;
+margin-bottom: 1em;
+color: #064e3b;
+}
+blockquote p {
+margin: 0;
+margin-left: 0;
+margin-right: 0;
+font-style: normal;
+line-height: 1.55;
+}
+blockquote strong {
+color: #065f46;
+}
+
+p {
+margin-top: 0.6em;
+margin-bottom: 0.6em;
+}
+p > strong:first-child {
+color: #111827;
+}
+p > em:only-child {
+color: #9ca3af;
+font-size: 0.88em;
+}
+
+hr {
+background: transparent;
+border: none;
+border-top: 1px solid #eff6ff;
+margin-top: 1.5em;
+margin-bottom: 1.5em;
+}
+
+ul {
+padding-left: 1.25em;
+margin-top: 0.5em;
+margin-bottom: 0.75em;
+}
+li {
+margin: 0.35em 0;
+color: #374151;
+}
+
+a {
+color: #2563eb;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+
+table {
+border-collapse: collapse;
+width: calc(100% - 64px);
+font-size: 0.88em;
+margin-top: 0.75em;
+margin-bottom: 1.25em;
+display: table;
+}
+th {
+background: #1e40af;
+color: #ffffff;
+padding: 9px 13px;
+text-align: left;
+font-size: 0.84em;
+font-weight: 600;
+letter-spacing: 0.03em;
+}
+td {
+padding: 8px 13px;
+border-bottom: 1px solid #eff6ff;
+vertical-align: top;
+}
+tr:nth-child(even) td {
+background: #f8faff;
+}
+
+hr:last-of-type + p {
+font-size: 0.8em;
+color: #9ca3af;
+padding-bottom: 28px;
+}
+
+code {
+font-family: "SF Mono", "Fira Code", Consolas, monospace;
+font-size: 0.86em;
+background: #eff6ff;
+color: #1e40af;
+padding: 1px 5px;
+border-radius: 3px;
+}
+</style>
+</head>
+<body>
+<h1 id="this-week-in-ai-week-of-june-8-2026">This Week in AI — Week of
+June 8, 2026</h1>
+<p><em>ISO Week 2026-24 · Distributed to: Secure Digital Core, Accenture
+Security</em> <em>Prepared by: Jacob Nosal |
+jacob.nosal@accenture.com</em></p>
+<hr />
+<h2 id="at-a-glance">At a Glance</h2>
+<blockquote>
+<p>A quiet week for flagship model launches turned into an
+<strong>AI-infrastructure and memory-supply</strong> week. On June 7,
+<strong>NVIDIA</strong> signed a multiyear memory partnership with
+<strong>SK hynix</strong> and announced “gigawatt-scale” AI-factory
+deals with <strong>LG</strong> and <strong>Naver</strong> — directly
+reinforcing the memory-vendor cap-table signal from the Anthropic Series
+H two weeks ago. <strong>Gemini 3.5 Pro</strong> is reportedly close to
+general availability but had still not shipped as of June 6. On policy,
+the <strong>EU</strong> stood up its AI Act enforcement machinery — a
+60-expert <strong>Scientific Panel</strong> and a 174-member
+<strong>Advisory Forum</strong> (June 1) — partly answering the “who
+actually enforces GPAI obligations” question. The most actionable SDC
+item is a resolution, not a new threat: the <strong>Microsoft Semantic
+Kernel</strong> agent-RCE path flagged last week now has assigned CVEs
+and shipped patches. No new frontier flagship landed; xAI’s <strong>Grok
+V9-Medium</strong> remains pre-release.</p>
+</blockquote>
+<hr />
+<h2 id="model-releases-benchmarks">Model Releases &amp; Benchmarks</h2>
+<p><strong>Google DeepMind — Gemini 3.5 Pro nearing general availability
+(still in preview as of June 6)</strong> Announced at Google I/O on May
+19, Gemini 3.5 Pro remains in limited Vertex preview. Google’s stated
+targets are a 2-million-token context window, a “Deep Think” reasoning
+mode, and frontier multimodal understanding — the tier absorbing the use
+cases previously routed to Gemini Ultra. GA is expected in June but had
+not shipped at the time of writing. <code>REVIEW:</code> pricing is
+<strong>not</strong> Google-confirmed; third-party estimates of ~$15/$60
+per 1M tokens (≈10× Gemini 3.5 Flash) are analogy-based speculation — do
+not quote to clients. (<a href="https://www.techtimes.com/articles/317919/20260606/google-gemini-35-pro-nears-june-launch-2-million-token-context-deep-think-reasoning.htm">Tech
+Times</a> · <a href="https://deepmind.google/models/gemini/">Google
+DeepMind</a>)</p>
+<blockquote>
+<p><strong>💡 Why it matters</strong> — A 2M-token, Deep-Think Pro tier
+is aimed squarely at long-context agentic and document-reasoning
+workloads. But it is announced, not shipped: treat the specs as targets
+until GA and independent benchmarks land, and don’t architect client
+pilots around an unpriced model.</p>
+</blockquote>
+<p><em>(No new frontier flagship shipped this week. xAI’s Grok V9-Medium
+— 1.5T parameters, trained on Cursor data — completed training May 25
+but remains pre-release with a “mid-June” target; see What to Watch. <a href="https://www.techtimes.com/articles/317328/20260528/grok-ai-new-model-triples-parameter-count-targets-coding-lead-release-expected-mid-june.htm">Tech
+Times</a>)</em></p>
+<hr />
+<h2 id="safety-research">Safety &amp; Research</h2>
+<p><em>(No notable new alignment, interpretability, or red-team
+publications this week. The week’s safety-relevant activity was
+operational — see the Semantic Kernel CVE resolution under Enterprise
+&amp; Security Implications — and institutional, see the EU Scientific
+Panel under Policy &amp; Regulation.)</em></p>
+<hr />
+<h2 id="policy-regulation">Policy &amp; Regulation</h2>
+<p><strong>European Union — AI Act enforcement bodies formally appointed
+(June 1)</strong> The European Commission appointed the two independent
+expert bodies that support the AI Office: a <strong>Scientific
+Panel</strong> of 60 independent experts (focused on general-purpose AI,
+systemic risk, model classification, evaluation methodology, and
+cross-border market surveillance) and a <strong>174-member Advisory
+Forum</strong> drawn from civil society, academia, and industry. Members
+serve two-year terms. (<a href="https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support">European
+Commission</a> · <a href="https://digital-strategy.ec.europa.eu/en/policies/ai-scientific-panel">AI
+Scientific Panel</a>)</p>
+<blockquote>
+<p><strong>🛡️ Why it matters for SDC</strong> — The EU now has named
+institutions, not just statutory text, behind GPAI and systemic-risk
+enforcement. For clients with EU-facing general-purpose or high-risk
+systems, “who classifies a model as systemic-risk and on what
+methodology” now has an address — factor it into AI-governance and
+model-evaluation roadmaps.</p>
+</blockquote>
+<p><strong>Date cleanup — EU AI Act high-risk timeline</strong>
+(resolving last week’s flagged conflict): Under the Act <strong>as
+adopted</strong>, prohibited practices (since Feb 2025) and GPAI
+obligations (since Aug 2025) are in force; <strong>standalone high-risk
+obligations apply from August 2, 2026</strong>, with product-embedded
+high-risk systems extended to August 2, 2028. The Digital/AI Omnibus
+postponement of the high-risk dates is <strong>provisionally agreed but
+not yet formally adopted</strong>, so August 2, 2026 remains the legal
+default until that adoption happens. (<a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">European
+Commission — Regulatory framework</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — Multinationals
+should plan to the Act-as-adopted August 2, 2026 high-risk date, not the
+provisional Omnibus relief. Treating the postponement as if it were law
+is the kind of assumption that turns into a compliance gap if the
+Omnibus slips.</p>
+</blockquote>
+<hr />
+<h2 id="business-funding">Business &amp; Funding</h2>
+<p><strong>NVIDIA — multiyear memory partnership with SK hynix;
+gigawatt-scale AI-factory deals with LG and Naver (June 7)</strong>
+NVIDIA and SK hynix announced a multiyear partnership to co-develop
+next-generation memory for the AI-factory buildout — explicitly aligning
+SK hynix’s memory supply with NVIDIA’s roadmap (Vera Rubin AI
+supercomputers, Vera CPUs, RTX Spark PCs, Jetson Thor) and applying
+NVIDIA’s own stack (CUDA-X, PhysicsNeMo, Omniverse/cuOpt) to chip design
+and autonomous-fab digital twins. The same day, NVIDIA announced
+“gigawatt-scale” AI-factory collaborations with <strong>LG</strong> and
+<strong>Naver</strong> in South Korea. (<a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-SK-hynix-Announce-Multiyear-Technology-Partnership-to-Advance-Memory-for-AI-Factories/default.aspx">NVIDIA</a>
+· <a href="https://www.globenewswire.com/news-release/2026/06/07/3307752/0/en/NVIDIA-and-SK-hynix-Announce-Multiyear-Technology-Partnership-to-Advance-Memory-for-AI-Factories.html">GlobeNewswire</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — This is the same
+structural signal we flagged in the Anthropic Series H (memory vendors
+on the cap table): HBM/next-gen memory supply is being pre-committed
+around NVIDIA’s roadmap. For clients planning AI-infrastructure spend,
+memory and AI-factory capacity is increasingly allocated through
+multiyear vendor alignment, not open-market purchase — a
+procurement-timing and supply-risk conversation, not just a chip-price
+one.</p>
+</blockquote>
+<p><strong>Moonshot AI (Kimi) — reportedly raising ~$2B at a ~$30B
+valuation (June 8)</strong> Per Bloomberg, the Beijing-based maker of
+the Kimi chatbot is reportedly in talks to raise more than $1B in a
+round that would value it at roughly $30 billion — its third raise in
+six months (a ~$20B round led by Meituan closed in May; the company was
+valued near $4B in December). (<a href="https://www.bloomberg.com/news/articles/2026-06-08/china-s-moonshot-ai-seeks-30-billion-value-in-new-funding-talks">Bloomberg</a>
+· <a href="https://techcrunch.com/2026/05/07/chinas-moonshot-ai-raises-2b-at-20b-valuation-as-demand-for-open-source-ai-skyrockets/">TechCrunch</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — A roughly 7×
+valuation climb in six months for a Chinese <strong>open-weight</strong>
+frontier lab is a market signal worth tracking: clients evaluating
+open-source model strategies increasingly have a credible non-US
+frontier option, with the attendant data-residency, export-control, and
+supply-chain questions that come with it.</p>
+</blockquote>
+<hr />
+<h2 id="enterprise-security-implications">Enterprise &amp; Security
+Implications</h2>
+<p><strong>Microsoft Semantic Kernel agent-RCE — CVEs assigned and
+patches shipped</strong> (resolves last week’s open watch item) The
+Semantic Kernel “prompt-injection-to-host-RCE” path flagged last week
+(via a single security roundup) now has concrete vendor detail.
+Microsoft assigned two CVEs: <strong>CVE-2026-26030</strong>, where the
+In-Memory Vector Store’s default filter builds a Python lambda at
+runtime and executes it with <code>eval()</code> — turning prompt
+injection into host-level RCE — and <strong>CVE-2026-25592</strong>,
+where the .NET SDK’s <code>SessionsPythonPlugin</code> exposed a
+host-side file-download method as a callable kernel function the model
+could invoke as a tool. MSRC advisories and the “When prompts become
+shells” research post published <strong>May 7, 2026</strong>; fixes
+shipped in <strong>semantic-kernel ≥1.39.4 (Python)</strong> and
+<strong>≥1.71.0 (.NET)</strong>, adding an AST allowlist, a
+function-call allowlist, and a dangerous-attribute blocklist. (<a href="https://www.microsoft.com/en-us/security/blog/2026/05/07/prompts-become-shells-rce-vulnerabilities-ai-agent-frameworks/">Microsoft
+Security Blog</a> · <a href="https://www.pointguardai.com/ai-security-incidents/semantic-kernel-lets-a-prompt-open-a-shell-cve-2026-25592-cve-2026-26030">PointGuard
+AI</a>)</p>
+<blockquote>
+<p><strong>🛡️ Why it matters for SDC</strong> — Two concrete client
+actions: (1) <strong>inventory and upgrade</strong> — any client running
+Semantic Kernel should be on Python ≥1.39.4 / .NET ≥1.71.0; (2)
+generalize the pattern — <strong>any agent framework that constructs and
+then executes code from model output</strong> (<code>eval</code>,
+dynamic lambdas, runtime-exposed host functions) is RCE-by-design, not
+by accident. Make “does the framework eval model-influenced strings?” a
+standard question in agentic-AI security reviews.</p>
+</blockquote>
+<blockquote>
+<p><strong>Unverified rumor flagged for tracking</strong> — A separate
+“CVE-2026-2256” (reported as a critical MS-Agent
+prompt-injection-to-command-execution flaw, CVSS 9.8) circulated this
+week, but the primary write-up was inaccessible and we could not confirm
+it against NVD or an MSRC advisory. <code>REVIEW:</code> tracking only —
+do not cite to clients until verified against the CVE record.</p>
+</blockquote>
+<hr />
+<h2 id="what-to-watch-next-week">What to Watch Next Week</h2>
+<ul>
+<li>Gemini 3.5 Pro general availability and official pricing (still
+preview as of June 6)</li>
+<li>xAI Grok V9-Medium formal release (still expected “mid-June”)</li>
+<li>Moonshot AI’s ~$30B round closing, and any new open-weight Kimi
+model drop</li>
+<li>Anthropic’s move from confidential to public S-1, plus banker and
+auditor mandates</li>
+<li>Formal adoption (or slippage) of the EU Digital/AI Omnibus high-risk
+postponement vs. the Act-as-adopted August 2, 2026 default</li>
+<li>Independent verification of “CVE-2026-2256” (MS-Agent) against
+NVD/MSRC</li>
+</ul>
+<hr />
+<p><em>Sources and working brief on file in this repo
+(<code>issues/brief-2026-24.md</code>). Reply with questions or topic
+requests.</em></p>
+</body>
+</html>
