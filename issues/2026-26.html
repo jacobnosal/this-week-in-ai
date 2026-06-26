@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>This Week in AI</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+html {
+background: #f0f5ff;
+}
+body {
+font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+font-size: 15px;
+line-height: 1.7;
+color: #1f2937;
+background: #ffffff;
+max-width: 660px;
+margin: 32px auto;
+padding: 0;
+border-radius: 8px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 4px 20px rgba(0,0,0,0.05);
+hyphens: none;
+}
+
+h1 {
+background: #eff6ff;
+color: #1e3a8a;
+margin: 0;
+padding: 30px 32px 24px;
+font-size: 1.4em;
+font-weight: 700;
+letter-spacing: -0.01em;
+line-height: 1.3;
+border-top: 5px solid #3b82f6;
+border-bottom: 1px solid #dbeafe;
+}
+
+h1 + p {
+font-size: 0.8em;
+color: #6b7280;
+background: #f8faff;
+margin: 0;
+padding: 10px 32px 16px;
+line-height: 1.8;
+border-bottom: 1px solid #e5e7eb;
+}
+
+h2, p, ul, blockquote, table, hr {
+margin-left: 32px;
+margin-right: 32px;
+}
+
+h2 {
+font-size: 0.7em;
+font-weight: 800;
+text-transform: uppercase;
+letter-spacing: 0.13em;
+color: #1e40af;
+background: #eff6ff;
+padding: 7px 12px;
+margin-top: 2em;
+margin-bottom: 0.8em;
+border-left: 3px solid #3b82f6;
+border-radius: 0 4px 4px 0;
+}
+
+h2 + blockquote {
+background: #eff6ff;
+border-left: 3px solid #3b82f6;
+border-radius: 0 6px 6px 0;
+padding: 14px 18px;
+margin-top: 0;
+margin-bottom: 1.25em;
+color: #1e3a8a;
+}
+h2 + blockquote p {
+margin: 0;
+margin-left: 0;
+margin-right: 0;
+font-style: normal;
+line-height: 1.65;
+}
+
+blockquote {
+background: #f0fdf4;
+border-left: 3px solid #34d399;
+border-radius: 0 6px 6px 0;
+padding: 10px 16px;
+margin-top: 6px;
+margin-bottom: 1em;
+color: #064e3b;
+}
+blockquote p {
+margin: 0;
+margin-left: 0;
+margin-right: 0;
+font-style: normal;
+line-height: 1.55;
+}
+blockquote strong {
+color: #065f46;
+}
+
+p {
+margin-top: 0.6em;
+margin-bottom: 0.6em;
+}
+p > strong:first-child {
+color: #111827;
+}
+p > em:only-child {
+color: #9ca3af;
+font-size: 0.88em;
+}
+
+hr {
+background: transparent;
+border: none;
+border-top: 1px solid #eff6ff;
+margin-top: 1.5em;
+margin-bottom: 1.5em;
+}
+
+ul {
+padding-left: 1.25em;
+margin-top: 0.5em;
+margin-bottom: 0.75em;
+}
+li {
+margin: 0.35em 0;
+color: #374151;
+}
+
+a {
+color: #2563eb;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+
+table {
+border-collapse: collapse;
+width: calc(100% - 64px);
+font-size: 0.88em;
+margin-top: 0.75em;
+margin-bottom: 1.25em;
+display: table;
+}
+th {
+background: #1e40af;
+color: #ffffff;
+padding: 9px 13px;
+text-align: left;
+font-size: 0.84em;
+font-weight: 600;
+letter-spacing: 0.03em;
+}
+td {
+padding: 8px 13px;
+border-bottom: 1px solid #eff6ff;
+vertical-align: top;
+}
+tr:nth-child(even) td {
+background: #f8faff;
+}
+
+hr:last-of-type + p {
+font-size: 0.8em;
+color: #9ca3af;
+padding-bottom: 28px;
+}
+
+code {
+font-family: "SF Mono", "Fira Code", Consolas, monospace;
+font-size: 0.86em;
+background: #eff6ff;
+color: #1e40af;
+padding: 1px 5px;
+border-radius: 3px;
+}
+</style>
+</head>
+<body>
+<h1 id="this-week-in-ai-week-of-june-22-2026">This Week in AI — Week of
+June 22, 2026</h1>
+<p><em>ISO Week 2026-26 · Distributed to: Secure Digital Core, Accenture
+Security</em> <em>Prepared by: Jacob Nosal |
+jacob.nosal@accenture.com</em></p>
+<hr />
+<h2 id="at-a-glance">At a Glance</h2>
+<blockquote>
+<p>The week’s defining event was a <strong>government availability
+shock, not a product launch</strong>: on or around <strong>June
+12</strong>, the US administration ordered <strong>Anthropic</strong> to
+block <strong>all foreign-national access</strong> — inside and outside
+the US, its own foreign-born employees included — to its two newest top
+models, <strong>Fable 5</strong> and <strong>Mythos 5</strong>, citing
+national security (a suspected China-linked access and an alleged
+jailbreak). To comply, Anthropic <strong>disabled both models for every
+customer</strong>; as of the week of June 22 they remained offline (~Day
+10). Critically, this is a <strong>standalone export/national-security
+directive</strong>, <em>not</em> a mechanism of the June 2 Executive
+Order — a distinction worth getting right with clients. Elsewhere:
+<strong>SpaceX confirmed a $60B all-stock acquisition of Cursor</strong>
+(June 16) and <strong>xAI’s Grok V9-Medium</strong> reached consumer
+apps (API still closed). The most actionable SDC item is
+<strong>“Agentjacking”</strong> — a Sentry-MCP injection that turns
+Claude Code, Cursor, and Codex into an attacker’s execution layer. No
+new frontier <em>flagship</em> shipped; <strong>Gemini 3.5 Pro</strong>
+is still in preview and <strong>GPT-5.6</strong> is still
+unreleased.</p>
+</blockquote>
+<hr />
+<h2 id="model-releases-benchmarks">Model Releases &amp; Benchmarks</h2>
+<p><em>New models, version updates, benchmark results, pricing changes,
+availability changes across any frontier lab.</em></p>
+<p><strong>Anthropic — Fable 5 and Mythos 5 disabled for all customers
+under a US directive (~June 12)</strong> The headline “release” news
+this week was a <strong>de-release</strong>. Following a US
+export-control / national-security directive ordering Anthropic to block
+foreign-national access, Anthropic <strong>abruptly disabled Fable 5 and
+Mythos 5 for all customers</strong> to ensure compliance; its other
+models remained available. The models were still offline (~Day 10)
+during the week of June 22, with Anthropic stating they would return “in
+the coming days.” (Policy and rationale are covered under Policy &amp;
+Regulation.) (<a href="https://www.aljazeera.com/news/2026/6/14/us-asks-anthropic-to-block-global-access-to-top-ai-models-why-it-matters">Al
+Jazeera</a> · <a href="https://www.nextgov.com/artificial-intelligence/2026/06/anthropic-suspends-top-ai-models-after-us-export-control-order/414173/">Nextgov/FCW</a>)</p>
+<blockquote>
+<p><strong>🛡️ Why it matters for SDC</strong> — Treat <em>model
+availability</em> as a live continuity risk, not a given. A frontier
+model your client architected against can be pulled by government order
+in days, for reasons unrelated to that client. Anyone with production
+dependencies on Fable 5 / Mythos 5 needs a <strong>fallback-model
+runbook</strong> (degrade to an available tier, not an outage). This is
+a new failure mode to add to AI-vendor due diligence.</p>
+</blockquote>
+<p><strong>xAI — Grok V9-Medium live in consumer apps; API still closed
+(June 16)</strong> Grok V9-Medium (reportedly ~1.5T parameters, ~3× the
+prior production model, trained on Cursor developer-workflow data)
+appeared in the <strong>consumer</strong> Grok product on X and
+SuperGrok on June 16. <strong>API availability had not opened</strong>
+as of June 19 — consumer and API are separate gates at xAI. This
+resolves last issue’s “mid-June release” watch item: shipped to
+consumers, not yet to builders. (<a href="https://www.techtimes.com/articles/318495/20260616/grok-v9-medium-arrives-spacex-seals-cursor-developers-face-model-choice-risk.htm">Tech
+Times</a>)</p>
+<blockquote>
+<p><strong>💡 Why it matters</strong> — Consumer availability is not
+integration availability. For any client weighing Grok V9-Medium for
+coding workloads, the relevant gate — the API — is still closed; do not
+plan pilots around it yet.</p>
+</blockquote>
+<p><em>(No new frontier flagship shipped this week. <strong>Gemini 3.5
+Pro</strong> remained in limited Vertex preview as of June 23, still
+unpriced — see <a href="https://codersera.com/blog/gemini-3-5-pro-launch-guide-2026/">codersera</a>.
+<code>REVIEW:</code> one aggregator reported a “Gemini 2.5 Pro” launch
+on June 22; this appears to be a version-number error and is
+uncorroborated — omitted pending confirmation. <strong>OpenAI
+GPT-5.6</strong> was teased for late June but had not shipped.)</em></p>
+<blockquote>
+<p><strong>Unverified rumor flagged for tracking</strong> — Open-weight
+<strong>GLM-5.2</strong> (Z.ai/Zhipu, MIT-licensed) is
+<em>vendor/third-party-reported</em> to score <strong>SWE-bench Pro 62.1
+vs GPT-5.5’s 58.6</strong> at roughly 6.8× lower output cost.
+<code>REVIEW:</code> benchmark is not independently verified and
+self-hosting needs 8+ H100s; do not quote the number to clients as
+established. (<a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-22-2026">buildfastwithai</a>)</p>
+</blockquote>
+<hr />
+<h2 id="safety-research">Safety &amp; Research</h2>
+<p><em>Alignment papers, interpretability findings, red-team
+disclosures, model evaluations, governance frameworks.</em></p>
+<p><strong>OWASP — <em>State of Agentic AI Security and Governance</em>
+v2.01 (June 2026)</strong> The 2026 edition shifts from theoretical risk
+to <strong>evidence-based</strong>, cataloguing CVEs, vendor advisories,
+and breach reports across nearly every agentic-risk category. Prompt
+injection maps to <strong>6 of OWASP’s 10</strong> agentic top risks;
+the report codifies the <strong>“Lethal Trifecta”</strong> (private-data
+access + untrusted-content exposure + external communication =
+exfiltration-by-design) and Meta’s <strong>“Agents Rule of Two”</strong>
+(an autonomous agent should satisfy at most two of those three without
+human approval). It notes only <strong>37%</strong> of organizations
+have shadow-AI detection, and three supply-chain layers (malicious MCP
+servers, agent execution environments, package repos — e.g. the LiteLLM
+PyPI backdoor that hit CrewAI, DSPy, and MS GraphRAG). (<a href="https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/">Help
+Net Security</a>)</p>
+<blockquote>
+<p><strong>🛡️ Why it matters for SDC</strong> — This is a ready-made
+control framework for client conversations. The “Lethal Trifecta” and
+“Rule of Two” are concrete, defensible design tests you can apply in an
+agentic-AI architecture review today — and a live exploit of exactly
+this pattern landed the same week (see Agentjacking below).</p>
+</blockquote>
+<p><em>(No major new alignment or interpretability paper landed this
+week; the week’s safety-relevant activity was operational — see
+Enterprise &amp; Security Implications.)</em></p>
+<hr />
+<h2 id="policy-regulation">Policy &amp; Regulation</h2>
+<p><em>US federal/state AI action, EU AI Act developments, NIST
+guidance, international governance.</em></p>
+<p><strong>United States — Foreign-national access to a commercial
+frontier model cut by directive (~June 12)</strong> The directive behind
+the Fable 5 / Mythos 5 suspension invoked national-security authorities
+(reported as a Commerce action) and required Anthropic to block access
+by <strong>any foreign national, inside or outside the US</strong>,
+including its own foreign-born staff. The stated basis: a suspected
+China-linked group accessed the new model, and Trump AI adviser
+<strong>David Sacks</strong> cited a potential jailbreak (Amazon
+researchers reportedly flagged vulnerabilities). <strong>Anthropic
+disputes the basis</strong>, saying it received only <em>“verbal
+evidence of a potential narrow, non-universal jailbreak”</em> and that
+this should not justify recalling a model deployed to hundreds of
+millions. (<a href="https://www.cnbc.com/2026/06/17/anthropic-ai-regulation-trump.html">CNBC</a>
+· <a href="https://www.aljazeera.com/news/2026/6/14/us-asks-anthropic-to-block-global-access-to-top-ai-models-why-it-matters">Al
+Jazeera</a>)</p>
+<blockquote>
+<p><strong>🛡️ Why it matters for SDC</strong> — <code>REVIEW:</code>
+This is the first time foreign-national access to a <em>commercial</em>
+US frontier model has been cut by government order — a precedent
+distinct from chip/export controls. Flag two client-facing implications:
+(1) <strong>personnel</strong> — “US-persons-only” access restrictions
+could attach to specific models, a real constraint for global delivery
+teams and foreign-national engineers; (2) <strong>continuity</strong> —
+government action is now a documented reason a model can disappear. Both
+belong in AI-vendor risk registers.</p>
+</blockquote>
+<p><strong>Clarification — this is NOT the June 2 Executive
+Order.</strong> Executive Order 14409, <em>“Promoting Advanced AI
+Innovation and Security”</em> (signed <strong>June 2, 2026</strong>),
+establishes a <strong>voluntary</strong> covered-frontier-model process
+(optional pre-release government access of up to 30 days), directs
+CISA/cyber upgrades, and prioritizes prosecution of AI-enabled
+intrusions — while <strong>explicitly disclaiming</strong> mandatory
+licensing, preclearance, or permitting, and containing
+<strong>no</strong> export-control or foreign-national-access
+provisions. The Fable 5 / Mythos 5 action is a <strong>separate</strong>
+directive. (<a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">White
+House — EO 14409</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — Expect the two to
+be conflated in client briefings. The defensible read: the EO is a
+voluntary cooperation framework; the model suspension is a separate
+national-security action. Keeping them distinct avoids overstating what
+US law currently <em>mandates</em> of AI developers.</p>
+</blockquote>
+<p><strong>European Union — GPAI Code of Practice signatories firm up
+ahead of Aug 2 enforcement</strong> The final General-Purpose AI Code of
+Practice has now been signed by roughly two dozen providers — including
+<strong>Anthropic, Google, IBM, Microsoft, Mistral, OpenAI, and
+Cohere</strong>. <strong>Meta did not sign</strong>, and <strong>xAI
+signed only the Safety &amp; Security chapter.</strong> Commission
+enforcement powers under the Act activate <strong>August 2,
+2026</strong>. (<a href="https://www.lw.com/en/insights/eu-ai-act-gpai-model-obligations-in-force-and-final-gpai-code-of-practice-in-place">Latham
+&amp; Watkins</a> · <a href="https://artificialintelligenceact.eu/introduction-to-code-of-practice/">EU
+AI Act</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — Code-of-Practice
+signature status is now a usable due-diligence signal when advising on
+model selection for EU-facing systems: signatories have committed to a
+transparency/copyright/safety baseline; non- and partial-signatories
+(Meta, xAI) have not. Pair this with the Aug 2 enforcement date in
+client governance roadmaps.</p>
+</blockquote>
+<p><strong>United States — 42 state attorneys general investigating
+OpenAI</strong> <code>REVIEW:</code> Per aggregated reporting,
+<strong>42 state AGs</strong> are investigating OpenAI over advertising
+claims, sycophancy, data handling (including health data), and treatment
+of minors and seniors, with New York serving subpoenas ahead of an
+anticipated September 2026 IPO. Single-aggregator sourced — verify
+against a primary AG release before client use. (<a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-22-2026">buildfastwithai</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — A multistate
+consumer-protection probe of the category’s largest vendor, timed
+against its IPO, is a reputational and contractual data point for
+clients standardizing on OpenAI — worth tracking, not yet worth acting
+on.</p>
+</blockquote>
+<hr />
+<h2 id="business-funding">Business &amp; Funding</h2>
+<p><em>Funding, M&amp;A, major deals, executive moves.</em></p>
+<p><strong>SpaceX — $60B all-stock acquisition of Anysphere (Cursor),
+confirmed June 16</strong> SpaceX confirmed it will acquire
+<strong>Cursor</strong> maker Anysphere for <strong>$60B in
+stock</strong>, exercising an option locked in April (buy outright for
+$60B or pay a $10B break-up fee); the deal is expected to close in
+<strong>Q3 2026</strong>. It landed days after SpaceX’s June IPO, with
+the stock running from ~$135 to $200+ — which effectively cut the real
+cost of the all-stock deal. xAI had merged into SpaceX earlier in 2026,
+and Cursor’s developer data already underpins Grok V9-Medium’s coding
+training. (<a href="https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/">TechCrunch</a>
+· <a href="https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html">CNBC</a>
+· <a href="https://fortune.com/2026/06/16/elon-musk-spacex-ipo-ai-coding-startup-cursor-acquisition/">Fortune</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — A leading
+AI-coding tool moving inside the SpaceX/xAI umbrella is a concentration
+signal: clients standardizing on Cursor now have vendor-independence,
+data-governance, and roadmap-control questions to weigh. The all-stock
+structure — funded by post-IPO stock appreciation — is also a template
+for how richly valued AI players can acquire without cash.</p>
+</blockquote>
+<p><strong>OpenAI — Noam Shazeer reported to lead Architecture Research
+(June 18)</strong> <code>REVIEW:</code> Per aggregated reporting,
+<strong>Noam Shazeer</strong> (co-author of the 2017 “Attention Is All
+You Need” paper; rehired by Google for a reported $2.7B in 2024) has
+joined <strong>OpenAI</strong> to lead Architecture Research.
+Single-aggregator sourced — confirm before client use. (<a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-22-2026">buildfastwithai</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — Senior
+architecture talent consolidating at OpenAI is a modest signal on where
+next-generation model design capacity is pooling; relevant context for
+long-horizon vendor bets, not an immediate action.</p>
+</blockquote>
+<p><strong>IPO pipeline — Anthropic and OpenAI S-1s in motion</strong>
+Resolving last issue’s watch item: Anthropic filed a <strong>draft S-1
+on June 1</strong>, and OpenAI has filed
+<strong>confidentially</strong>; aggregated reporting frames a combined
+OpenAI/Anthropic/SpaceX listing ambition near <strong>$3.8T</strong>.
+(<a href="https://www.thestreet.com/investing/stocks/spacex-acquires-anthropic-and-openai-rival-in-60b-deal">TheStreet</a>
+· <a href="https://intellectia.ai/blog/ai-ipo-boom-2026-investment-guide">Intellectia</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — Frontier labs
+moving toward public markets means more disclosure (financials, risk
+factors) that can sharpen vendor due diligence — and more pressure on
+those labs to show enterprise revenue, which tends to favor enterprise
+buyers on terms.</p>
+</blockquote>
+<hr />
+<h2 id="enterprise-security-implications">Enterprise &amp; Security
+Implications</h2>
+<p><em>Developments with direct relevance to client conversations:
+agentic AI risk, prompt injection, model supply chain,
+governance.</em></p>
+<p><strong>“Agentjacking” — a Sentry error report can hijack Claude
+Code, Cursor, and Codex</strong> Researchers at <strong>Tenet
+Security</strong> disclosed <strong>Agentjacking</strong>: an attacker
+who knows a target’s public <strong>Sentry DSN</strong> submits a
+crafted error report containing <strong>markdown injection</strong>;
+when the <strong>Sentry MCP server</strong> returns that event to an AI
+coding agent (<strong>Claude Code, Cursor, OpenAI Codex</strong>), it is
+rendered as <em>trusted system output</em>, and the agent can be steered
+into executing attacker-controlled code on the developer’s machine —
+<strong>no phishing, malware, or infrastructure breach
+required</strong>. Using only public Sentry APIs, researchers found
+<strong>2,388 exposed organizations</strong> (Fortune 100 down to
+independent developers) and observed 100+ agents acting on injected
+errors in testing. Sentry acknowledged the disclosure on <strong>June
+3</strong> and shipped a filter blocking the specific proof-of-concept
+string — but <strong>not the underlying architectural path</strong> (any
+MCP source that relays attacker-controllable content to an agent as
+trusted output). (<a href="https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html">The
+Hacker News</a> · <a href="https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/">Tenet
+Security</a> · <a href="https://www.scworld.com/brief/agentjacking-attack-exploits-ai-coding-tools-with-fake-error-reports">SC
+Media</a>)</p>
+<blockquote>
+<p><strong>🛡️ Why it matters for SDC</strong> — This is the
+indirect-prompt-injection-via-tooling pattern we’ve tracked (Semantic
+Kernel last month), now hitting the <strong>AI coding agents teams
+actually run</strong>. Concrete client actions: (1) <strong>treat every
+MCP server as an untrusted-input boundary</strong> — data returned by an
+MCP tool (error reports, tickets, logs, web content) must not be handled
+as trusted instructions; (2) <strong>require human-in-the-loop
+confirmation</strong> before an agent executes shell/code derived from
+external content; (3) for Sentry specifically, note the vendor fix is
+<strong>partial</strong> — the architectural exposure remains, so
+compensating controls (least-privilege agent permissions, sandboxed
+execution) are still required. Make “what untrusted content can reach
+this agent as ‘system output’?” a standard agentic-security review
+question.</p>
+</blockquote>
+<blockquote>
+<p><strong>🛡️ Why it matters for SDC (framework angle)</strong> — Pair
+the Agentjacking exploit with the OWASP v2.01 framework above: the
+attack is a textbook <strong>Lethal Trifecta</strong> instance (the
+agent has code-execution capability + ingests untrusted Sentry content +
+can act externally). Clients can use the “Rule of Two” as the
+remediation rule of thumb — break one leg of the trifecta (e.g., remove
+autonomous execution, or gate external content) and the exploit class
+collapses.</p>
+</blockquote>
+<hr />
+<h2 id="what-to-watch-next-week">What to Watch Next Week</h2>
+<ul>
+<li><strong>Fable 5 / Mythos 5 restoration</strong> — Anthropic signaled
+“coming days”; prediction markets ~57% before July 1. Watch for any
+<em>written</em> legal basis for the directive.</li>
+<li><strong>OpenAI GPT-5.6</strong> — teased for late June; not yet
+shipped.</li>
+<li><strong>Grok V9-Medium API</strong> general availability
+(consumer-only as of June 19).</li>
+<li><strong>SpaceX–Cursor close</strong> (~Q3 2026) and Cursor/xAI
+integration specifics.</li>
+<li><strong>EU AI Act</strong> — Commission enforcement powers go live
+<strong>August 2, 2026</strong>.</li>
+<li><strong>OpenAI 42-state AG probe</strong> trajectory vs. the
+anticipated September 2026 IPO.</li>
+<li>Independent confirmation of the <strong>GLM-5.2</strong> SWE-bench
+Pro figures and the <strong>Shazeer→OpenAI</strong> move.</li>
+</ul>
+<hr />
+<p><em>Sources and working brief on file in this repo
+(<code>issues/brief-2026-26.md</code>). Reply with questions or topic
+requests.</em></p>
+</body>
+</html>
