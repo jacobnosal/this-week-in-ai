@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>This Week in AI</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+html {
+background: #f0f5ff;
+}
+body {
+font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+font-size: 15px;
+line-height: 1.7;
+color: #1f2937;
+background: #ffffff;
+max-width: 660px;
+margin: 32px auto;
+padding: 0;
+border-radius: 8px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 4px 20px rgba(0,0,0,0.05);
+hyphens: none;
+}
+
+h1 {
+background: #eff6ff;
+color: #1e3a8a;
+margin: 0;
+padding: 30px 32px 24px;
+font-size: 1.4em;
+font-weight: 700;
+letter-spacing: -0.01em;
+line-height: 1.3;
+border-top: 5px solid #3b82f6;
+border-bottom: 1px solid #dbeafe;
+}
+
+h1 + p {
+font-size: 0.8em;
+color: #6b7280;
+background: #f8faff;
+margin: 0;
+padding: 10px 32px 16px;
+line-height: 1.8;
+border-bottom: 1px solid #e5e7eb;
+}
+
+h2, p, ul, blockquote, table, hr {
+margin-left: 32px;
+margin-right: 32px;
+}
+
+h2 {
+font-size: 0.7em;
+font-weight: 800;
+text-transform: uppercase;
+letter-spacing: 0.13em;
+color: #1e40af;
+background: #eff6ff;
+padding: 7px 12px;
+margin-top: 2em;
+margin-bottom: 0.8em;
+border-left: 3px solid #3b82f6;
+border-radius: 0 4px 4px 0;
+}
+
+h2 + blockquote {
+background: #eff6ff;
+border-left: 3px solid #3b82f6;
+border-radius: 0 6px 6px 0;
+padding: 14px 18px;
+margin-top: 0;
+margin-bottom: 1.25em;
+color: #1e3a8a;
+}
+h2 + blockquote p {
+margin: 0;
+margin-left: 0;
+margin-right: 0;
+font-style: normal;
+line-height: 1.65;
+}
+
+blockquote {
+background: #f0fdf4;
+border-left: 3px solid #34d399;
+border-radius: 0 6px 6px 0;
+padding: 10px 16px;
+margin-top: 6px;
+margin-bottom: 1em;
+color: #064e3b;
+}
+blockquote p {
+margin: 0;
+margin-left: 0;
+margin-right: 0;
+font-style: normal;
+line-height: 1.55;
+}
+blockquote strong {
+color: #065f46;
+}
+
+p {
+margin-top: 0.6em;
+margin-bottom: 0.6em;
+}
+p > strong:first-child {
+color: #111827;
+}
+p > em:only-child {
+color: #9ca3af;
+font-size: 0.88em;
+}
+
+hr {
+background: transparent;
+border: none;
+border-top: 1px solid #eff6ff;
+margin-top: 1.5em;
+margin-bottom: 1.5em;
+}
+
+ul {
+padding-left: 1.25em;
+margin-top: 0.5em;
+margin-bottom: 0.75em;
+}
+li {
+margin: 0.35em 0;
+color: #374151;
+}
+
+a {
+color: #2563eb;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+
+table {
+border-collapse: collapse;
+width: calc(100% - 64px);
+font-size: 0.88em;
+margin-top: 0.75em;
+margin-bottom: 1.25em;
+display: table;
+}
+th {
+background: #1e40af;
+color: #ffffff;
+padding: 9px 13px;
+text-align: left;
+font-size: 0.84em;
+font-weight: 600;
+letter-spacing: 0.03em;
+}
+td {
+padding: 8px 13px;
+border-bottom: 1px solid #eff6ff;
+vertical-align: top;
+}
+tr:nth-child(even) td {
+background: #f8faff;
+}
+
+hr:last-of-type + p {
+font-size: 0.8em;
+color: #9ca3af;
+padding-bottom: 28px;
+}
+
+code {
+font-family: "SF Mono", "Fira Code", Consolas, monospace;
+font-size: 0.86em;
+background: #eff6ff;
+color: #1e40af;
+padding: 1px 5px;
+border-radius: 3px;
+}
+</style>
+</head>
+<body>
+<h1 id="this-week-in-ai-week-of-september-21-2026">This Week in AI —
+Week of September 21, 2026</h1>
+<p><em>ISO Week 2026-39 · Distributed to: Secure Digital Core, Accenture
+Security</em> <em>Prepared by: Jacob Nosal |
+jacob.nosal@accenture.com</em></p>
+<hr />
+<h2 id="at-a-glance">At a Glance</h2>
+<blockquote>
+<p>The week was defined by a <strong>same-day frontier launch and price
+war on September 22</strong>: Anthropic shipped <strong>Claude Opus
+5.5</strong>, and roughly 90 minutes later OpenAI countered with two
+cheaper GPT-6 models, <strong>Sol and Luna</strong> (<a href="https://siliconangle.com/2026/09/22/anthropic-releases-claude-opus-5-5-and-openai-counters-with-two-cheaper-gpt-6-models/">SiliconANGLE</a>).
+OpenAI undercut aggressively — GPT-6 Sol lands at half the price of its
+predecessor and matches Opus 5.5’s capability tier at roughly half
+Anthropic’s per-token cost, while GPT-6 Luna drops to $0.10/$0.50.
+Notably, neither lab benchmarked the other’s new model, so the headline
+claims are all vendor-reported and independent evaluation is still
+pending. For enterprise AI programs the signal is cost: capable agents
+are getting materially cheaper to run, which lowers the barrier to
+large-scale agent deployment — and correspondingly enlarges the
+prompt-injection blast radius that SDC client conversations should
+already be addressing.</p>
+</blockquote>
+<hr />
+<h2 id="model-releases-benchmarks">Model Releases &amp; Benchmarks</h2>
+<p><strong>Anthropic — Claude Opus 5.5 (September 22)</strong> First
+model in the new 5.5 family. Anthropic reports a ~20% price cut to
+<strong>$4 / $20 per million tokens</strong> (input/output), cache reads
+at $0.20/MTok, and claims roughly 40% lower cost on typical workloads
+versus Opus 5 with over 30% faster output. Available on AWS, Google
+Cloud, and Azure; Anthropic signaled Sonnet 5.5 and Haiku 5.5 “within
+weeks.” Vendor-reported benchmarks include Terminal-Bench 4.0 66.4%,
+CursorBench 4.0 57.8%, and AutomationBench 40.0%. (<a href="https://www.anthropic.com/claude-opus-5-5">Anthropic</a> · <a href="https://www.datacamp.com/blog/gpt-6-sol-vs-claude-opus-5-5">DataCamp</a>)</p>
+<blockquote>
+<p><strong>💡 Why it matters</strong> — A flagship refresh that cuts
+price while claiming capability gains keeps downward pressure on
+agentic-workload economics; treat the benchmark deltas as
+vendor-reported until third parties confirm.</p>
+</blockquote>
+<p><strong>OpenAI — GPT-6 Sol and GPT-6 Luna (September 22)</strong>
+Released about 90 minutes after Opus 5.5 as faster, cheaper
+distillations of GPT-6 Astra (Astra shipped September 3 as a limited
+preview). OpenAI cut token prices in half: <strong>Sol at $2 / $10 per
+million tokens</strong> (down from $4/$20) and <strong>Luna at $0.10 /
+$0.50</strong> (down from $0.20/$1.20). Sol’s pricing matches Opus 5.5’s
+tier at roughly half the cost. OpenAI’s vendor-reported figures include
+Sol at 56.4% and Luna at 66.6% on its “Agents’ Last Exam” at max effort,
+with claimed per-task cost reductions of 60–96% versus prior Claude
+models. (<a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">OpenAI</a>
+· <a href="https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/">TechCrunch</a>
+· <a href="https://venturebeat.com/technology/openai-releases-gpt-6-sol-and-luna-models-slashing-api-costs-50-or-more">VentureBeat</a>)</p>
+<blockquote>
+<p><strong>💡 Why it matters</strong> — Luna’s $0.10/$0.50 pricing makes
+high-volume agentic pipelines dramatically cheaper to operate; the cost
+curve, not the benchmark bar, is the more durable enterprise signal this
+week.</p>
+</blockquote>
+<p><strong>Benchmark caveat — no head-to-head.</strong> Neither vendor
+evaluated the other’s new model in its launch materials; the only
+overlapping metric is AutomationBench (Opus 5.5 40.0% vs GPT-6 Sol
+33.2%, both vendor-reported). (<a href="https://www.theneurondaily.com/p/gpt-6-sol-luna-vs-claude-opus-5-5-live">The
+Neuron</a>)</p>
+<blockquote>
+<p><strong>💡 Why it matters</strong> — Procurement and architecture
+decisions should wait on neutral third-party benchmarks (SWE-bench,
+OSWorld, Terminal-Bench) rather than launch-day charts.</p>
+</blockquote>
+<hr />
+<h2 id="safety-research">Safety &amp; Research</h2>
+<p><strong>arXiv — “SkillSecurer: Detecting and Patching
+Prompt-Injection Vulnerabilities in AI Agent Skills” (preprint,
+September 15)</strong> A framework to statically detect and
+automatically patch prompt-injection vulnerabilities inside the reusable
+“skills” that agentic systems load. Arrives as agent skill/plugin
+ecosystems expand across enterprise deployments. (<a href="https://arxiv.org/abs/2609.14079">arXiv:2609.14079</a>)</p>
+<blockquote>
+<p><strong>💡 Why it matters</strong> — As agents assemble behavior from
+third-party skills, per-skill injection scanning becomes an AI
+supply-chain control, not just an application-layer one — a concrete
+technique to fold into agentic-AI assurance.</p>
+</blockquote>
+<hr />
+<h2 id="policy-regulation">Policy &amp; Regulation</h2>
+<p>No major binding AI policy action landed in the week of September
+21–25. The backdrop remains a widening US–EU split: the US continues to
+press a looser, innovation-first posture and argue against AI-specific
+rules in multilateral settings, while the EU AI Act’s general-purpose
+and high-risk obligations advance on their statutory timeline. (<a href="https://www.aljazeera.com/news/2026/9/2/us-pushes-looser-approach-to-ai-regulation-while-eu-pushes-new-law">Al
+Jazeera</a>)</p>
+<blockquote>
+<p><strong>💡 Why it matters</strong> — Multi-jurisdiction clients still
+need a dual-track compliance stance: EU AI Act conformity work continues
+regardless of the softer US federal signal.</p>
+</blockquote>
+<blockquote>
+<p><strong>Unverified rumor flagged for tracking</strong> — A secondary
+source referenced a revived “California SB 1047” frontier-AI bill
+carrying a reported end-of-September signing/veto decision. This could
+<strong>not</strong> be corroborated against authoritative legal
+trackers, which list SB 53 (Transparency in Frontier AI Act, effective
+Jan 1, 2026) as the frontier statute of record. Not presented as fact.
+<strong>REVIEW:</strong> confirm whether any California frontier-AI bill
+actually faces a September 30 gubernatorial deadline before this is
+cited to clients.</p>
+</blockquote>
+<hr />
+<h2 id="business-funding">Business &amp; Funding</h2>
+<p><em>(No notable business activity this week.)</em> The most recent
+major raise — Mistral’s €3B Samsung-led round — closed September 8 and
+falls outside this window. The competitive story this week is pricing
+(see Model Releases), not capital.</p>
+<hr />
+<h2 id="enterprise-security-implications">Enterprise &amp; Security
+Implications</h2>
+<p><strong>Cheaper, more capable agents enlarge the prompt-injection
+attack surface.</strong> Prompt injection — especially indirect
+injection via untrusted content the agent ingests — remains the dominant
+cause of agentic-AI security failures in production, with documented
+findings against widely used enterprise tools including Slack AI,
+Microsoft 365 Copilot, Cursor, and GitHub’s MCP integrations. The
+operative risk model is the “lethal trifecta”: untrusted input + access
+to private data + an exfiltration channel. This week’s launches (GPT-6
+Luna at $0.10/$0.50) make it economically trivial to deploy far more
+agents, scaling that exposure. (<a href="https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/">Help
+Net Security / OWASP</a> · <a href="https://airia.com/blog/ai-security-in-2026-prompt-injection-the-lethal-trifecta-and-how-to-defend/">Airia</a>)</p>
+<blockquote>
+<p><strong>🛡️ Why it matters for SDC</strong> — Client talking points:
+(1) normalize and segregate untrusted content before it reaches the
+model; (2) enforce least-privilege on agent tool authorities so a
+hijacked agent cannot reach private data <em>and</em> an exfiltration
+path simultaneously; (3) require runtime visibility over agent actions;
+(4) treat third-party agent skills/plugins as a software supply chain
+subject to injection scanning (see the SkillSecurer research above).</p>
+</blockquote>
+<hr />
+<h2 id="what-to-watch-next-week">What to Watch Next Week</h2>
+<ul>
+<li>Independent third-party benchmarks (SWE-bench Verified, OSWorld 2.0,
+Terminal-Bench) validating or discounting the vendor-reported Opus 5.5
+vs GPT-6 Sol/Luna claims</li>
+<li>Google and Meta responses to the September 22 price war (Gemini /
+Muse pricing or capability moves)</li>
+<li>Real-world impact of GPT-6 Luna’s $0.10/$0.50 pricing on high-volume
+agentic deployments</li>
+<li>Anthropic’s promised Sonnet 5.5 / Haiku 5.5 releases “within
+weeks”</li>
+<li><strong>REVIEW:</strong> status of any California frontier-AI
+legislation reportedly facing a September 30 gubernatorial deadline (see
+Policy note)</li>
+</ul>
+<hr />
+<p><em>Sources and working brief on file in this repo. Reply with
+questions or topic requests.</em></p>
+</body>
+</html>
