@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>This Week in AI</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+html {
+background: #f0f5ff;
+}
+body {
+font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+font-size: 15px;
+line-height: 1.7;
+color: #1f2937;
+background: #ffffff;
+max-width: 660px;
+margin: 32px auto;
+padding: 0;
+border-radius: 8px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 4px 20px rgba(0,0,0,0.05);
+hyphens: none;
+}
+
+h1 {
+background: #eff6ff;
+color: #1e3a8a;
+margin: 0;
+padding: 30px 32px 24px;
+font-size: 1.4em;
+font-weight: 700;
+letter-spacing: -0.01em;
+line-height: 1.3;
+border-top: 5px solid #3b82f6;
+border-bottom: 1px solid #dbeafe;
+}
+
+h1 + p {
+font-size: 0.8em;
+color: #6b7280;
+background: #f8faff;
+margin: 0;
+padding: 10px 32px 16px;
+line-height: 1.8;
+border-bottom: 1px solid #e5e7eb;
+}
+
+h2, p, ul, blockquote, table, hr {
+margin-left: 32px;
+margin-right: 32px;
+}
+
+h2 {
+font-size: 0.7em;
+font-weight: 800;
+text-transform: uppercase;
+letter-spacing: 0.13em;
+color: #1e40af;
+background: #eff6ff;
+padding: 7px 12px;
+margin-top: 2em;
+margin-bottom: 0.8em;
+border-left: 3px solid #3b82f6;
+border-radius: 0 4px 4px 0;
+}
+
+h2 + blockquote {
+background: #eff6ff;
+border-left: 3px solid #3b82f6;
+border-radius: 0 6px 6px 0;
+padding: 14px 18px;
+margin-top: 0;
+margin-bottom: 1.25em;
+color: #1e3a8a;
+}
+h2 + blockquote p {
+margin: 0;
+margin-left: 0;
+margin-right: 0;
+font-style: normal;
+line-height: 1.65;
+}
+
+blockquote {
+background: #f0fdf4;
+border-left: 3px solid #34d399;
+border-radius: 0 6px 6px 0;
+padding: 10px 16px;
+margin-top: 6px;
+margin-bottom: 1em;
+color: #064e3b;
+}
+blockquote p {
+margin: 0;
+margin-left: 0;
+margin-right: 0;
+font-style: normal;
+line-height: 1.55;
+}
+blockquote strong {
+color: #065f46;
+}
+
+p {
+margin-top: 0.6em;
+margin-bottom: 0.6em;
+}
+p > strong:first-child {
+color: #111827;
+}
+p > em:only-child {
+color: #9ca3af;
+font-size: 0.88em;
+}
+
+hr {
+background: transparent;
+border: none;
+border-top: 1px solid #eff6ff;
+margin-top: 1.5em;
+margin-bottom: 1.5em;
+}
+
+ul {
+padding-left: 1.25em;
+margin-top: 0.5em;
+margin-bottom: 0.75em;
+}
+li {
+margin: 0.35em 0;
+color: #374151;
+}
+
+a {
+color: #2563eb;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+
+table {
+border-collapse: collapse;
+width: calc(100% - 64px);
+font-size: 0.88em;
+margin-top: 0.75em;
+margin-bottom: 1.25em;
+display: table;
+}
+th {
+background: #1e40af;
+color: #ffffff;
+padding: 9px 13px;
+text-align: left;
+font-size: 0.84em;
+font-weight: 600;
+letter-spacing: 0.03em;
+}
+td {
+padding: 8px 13px;
+border-bottom: 1px solid #eff6ff;
+vertical-align: top;
+}
+tr:nth-child(even) td {
+background: #f8faff;
+}
+
+hr:last-of-type + p {
+font-size: 0.8em;
+color: #9ca3af;
+padding-bottom: 28px;
+}
+
+code {
+font-family: "SF Mono", "Fira Code", Consolas, monospace;
+font-size: 0.86em;
+background: #eff6ff;
+color: #1e40af;
+padding: 1px 5px;
+border-radius: 3px;
+}
+</style>
+</head>
+<body>
+<h1 id="this-week-in-ai-week-of-november-2-2026">This Week in AI — Week
+of November 2, 2026</h1>
+<p><em>ISO Week 2026-45 · Distributed to: Secure Digital Core, Accenture
+Security</em> <em>Prepared by: Jacob Nosal |
+jacob.nosal@accenture.com</em></p>
+<hr />
+<h2 id="at-a-glance">At a Glance</h2>
+<p>The week’s clearest signal was a security one. A single <a href="https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html">industry
+roundup</a> catalogued a wave of <strong>agentic-AI exploits</strong>
+disclosed by multiple research teams — led by Check Point’s bypass of
+OpenAI’s <strong>ChatGPT Lockdown Mode</strong> (the
+anti-prompt-injection control introduced in June, patched Sept 18),
+alongside credential-theft and zero-click data-exfiltration attacks
+against <strong>AWS Bedrock AgentCore</strong>, <strong>Salesforce
+Agentforce</strong>, and the built-in browsers and plugin supply chains
+of popular coding agents (Claude Code, Codex, GitHub Copilot, Gemini
+CLI). The through-line: once an agent holds real tool authority and sees
+untrusted content, prompt injection stops being a bad output and becomes
+active compromise. Model-release and funding activity this week
+(early-November OpenAI image models; reported OpenAI and Meta
+acquisitions; Anthropic IPO chatter) traces mostly to third-party
+trackers and aggregator blogs and is flagged below for human
+verification before client use.</p>
+<hr />
+<h2 id="safety-research">Safety &amp; Research</h2>
+<p><strong><a href="https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html">The
+Hacker News — Agentic-AI exploit roundup (Nov 5)</a></strong> Multiple
+research teams disclosed a cluster of attacks against agentic AI
+systems. Headline finding: <strong>Check Point</strong> (research head
+Eli Smadja) bypassed OpenAI’s <strong>ChatGPT Lockdown Mode</strong> —
+the optional anti-exfiltration setting launched June 2026 — by nesting
+sandboxed iframes inside ChatGPT’s HTML code-block previews to reach an
+unmodified popup function and escape the mode’s outbound restrictions,
+enabling silent/zero-click chat-data theft in the desktop app. OpenAI
+reportedly patched it on <strong>Sept 18, 2026</strong> following
+responsible disclosure. The same report names, among others:
+<strong>AgentCorruption</strong> (Zenity Labs — prompt injection on an
+exposed AWS Bedrock AgentCore agent to steal IMDS credentials and
+pivot), <strong>SalesBleed</strong> (Zenity Labs — zero-click
+account-data extraction from Salesforce Agentforce via a Web-to-Lead
+form), and <strong>Plugin4Shell</strong> (Air Security — a supply-chain
+swap that bypasses SHA pinning for RCE in Claude Code, Codex, GitHub
+Copilot, and Gemini CLI).</p>
+<blockquote>
+<p><strong>💡 Why it matters</strong> — This is the first week where
+agentic-AI exploits read like a conventional vuln-disclosure cycle:
+named bugs, named vendors, responsible disclosure, patch dates. The
+common factor across every item is an agent that holds tool authority
+<em>and</em> ingests untrusted content — the pattern enterprises now
+have to threat-model directly.</p>
+</blockquote>
+<blockquote>
+<p>REVIEW: Individual exploit names (AgentCorruption, SalesBleed,
+Plugin4Shell, Embrace, BragJack, PleaseFix, SkillJacking) and most
+vendor patch statuses come from a single roundup and could not be
+independently confirmed against each vendor’s own advisory. Confirm
+per-item patch status before citing specifics to a client.</p>
+</blockquote>
+<hr />
+<h2 id="policy-regulation">Policy &amp; Regulation</h2>
+<p><strong><a href="https://artificialintelligenceact.eu/">EU — AI Act
+penalty-procedure consultation closes Nov 9</a></strong> The European
+Commission’s consultation on penalty/fining procedures under the AI Act
+is reported to close <strong>November 9, 2026</strong>. This follows the
+Digital Omnibus (Reg. (EU) 2026/1744), in effect since July 27, 2026,
+which pushed the heaviest high-risk deadlines out while leaving Article
+50 transparency duties enforceable from Aug 2, 2026.</p>
+<blockquote>
+<p><strong>💡 Why it matters</strong> — Penalty mechanics determine
+real-world exposure. Clients with EU AI Act programs should confirm
+whether their legal/GR functions are tracking this consultation
+window.</p>
+</blockquote>
+<p><strong><a href="https://www.anaconda.com/blog/state-ai-regulation-2027">US —
+NIST/NSA/CISA joint incident-response practices (Oct 16)</a></strong>
+NIST, NSA, and CISA reportedly issued ten voluntary practices for
+incident response during advanced AI model training and evaluation — the
+most recent US federal AI-security guidance and not covered in prior
+editions.</p>
+<blockquote>
+<p><strong>🛡️ Why it matters for SDC</strong> — Voluntary-but-joint
+guidance from these three bodies tends to become the de facto baseline
+cited in later procurement and audit requirements. Worth a read for
+anyone shaping client AI incident-response playbooks.</p>
+</blockquote>
+<blockquote>
+<p>REVIEW: Both policy items are sourced to secondary compliance blogs,
+not the Official Journal / NIST publications directly. Verify exact
+dates and scope against primary sources before client distribution.</p>
+</blockquote>
+<hr />
+<h2 id="business-funding">Business &amp; Funding</h2>
+<p><strong>OpenAI — reported acquisition of Pierre Computer (Nov
+4)</strong> OpenAI reportedly announced plans to acquire Pierre
+Computer, maker of “Code Storage” (a Git hosting service already
+embedded in the Codex app). Terms undisclosed; the deal reportedly still
+needs regulatory approval and has not closed. (<a href="https://flaviocopes.com/acquisitions">flaviocopes.com</a>)</p>
+<p><strong>Meta — reported acquisition of Conductor</strong> Meta
+reportedly acquired Conductor, whose tool runs multiple AI coding agents
+(from several labs, including Anthropic and OpenAI) in parallel. (<a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-november-6-2026-openai-ships-gpt-6-cyber-meta-buys-conductor-anthropic-locks-1jij">DEV
+Community digest</a>)</p>
+<p><strong>OpenAI — reportedly trimmed fundraise; Anthropic IPO
+chatter</strong> OpenAI reportedly cut its target raise from ~$30B to
+~$20B, with a vendor-reported valuation move from $1.4T to $1.25T
+(attributed to FT reporting, Oct 31). Separately, Anthropic reportedly
+filed its S-1 on Oct 26 with a November IPO expected. (<a href="https://substack.aicentral.blog/p/the-ai-landscape-november-2026">AI
+Central</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — Two reads for
+competitive positioning: (1) frontier labs are buying
+developer-tooling/coding-agent infrastructure (Pierre, Conductor),
+reinforcing that the near-term enterprise value is in the agent
+<em>delivery layer</em>, not just the base model; (2) if the OpenAI
+fundraise/valuation trim is accurate, it’s a notable cooling signal to
+factor into client “pick-a-lab” conversations.</p>
+</blockquote>
+<blockquote>
+<p>REVIEW: Every item in this section is from aggregator/newsletter
+secondary sources — no primary announcement or SEC filing confirmed. Do
+not repeat valuation figures or deal terms to clients without primary
+verification.</p>
+</blockquote>
+<hr />
+<h2 id="enterprise-security-implications">Enterprise &amp; Security
+Implications</h2>
+<p><strong>Agentic exploits are now a disclosure category — threat-model
+the tool authority, not the model.</strong> The Nov 5 roundup clusters
+into three practical client talking points: - <strong>Tool-authority
+least-privilege.</strong> AgentCorruption-style attacks turn an injected
+prompt into credential theft (IMDS) and lateral movement. Confirm agent
+service accounts and tool scopes follow least-privilege and that agentic
+workflows can’t silently invoke high-privilege identities. -
+<strong>Supply chain for agent extensions.</strong> Plugin4Shell
+reportedly bypassed SHA pinning to achieve RCE in mainstream coding
+agents. Pinning alone is not integrity — validate plugin/skill
+provenance and update channels. - <strong>Untrusted content into agent
+context.</strong> SalesBleed (Web-to-Lead form) and PleaseFix
+(emails/calendar invites) show attacker-controlled content reaching
+agents through ordinary business intake. Treat any untrusted-content
+path into an agent as an injection surface.</p>
+<blockquote>
+<p><strong>🛡️ Why it matters for SDC</strong> — This maps cleanly onto
+an assume-breach agent architecture: least-privilege tool scopes,
+provenance-checked extensions, and sanitization at every
+untrusted-content ingestion point. It is a ready-made structure for a
+client agentic-AI risk conversation this quarter.</p>
+</blockquote>
+<hr />
+<h2 id="unverified-rumors-flagged-for-tracking">Unverified rumors
+flagged for tracking</h2>
+<blockquote>
+<p><strong>Unverified rumor flagged for tracking</strong> — Anthropic is
+reportedly weighing a new Claude model to counter OpenAI’s “GPT-6
+Astra.” Sourced to an aggregation of a Sept 20 post; no primary
+confirmation. (<a href="https://digg.com/ai/o61pjxs3">Digg</a>)</p>
+</blockquote>
+<blockquote>
+<p><strong>Unverified rumor flagged for tracking</strong> — Third-party
+trackers list early-November OpenAI image models (“GPT Image 2.6 Flare”
+/ “Sunburst,” Nov 4) and a DeepSeek “v4-flash” release (Nov 5), plus
+blog-only claims of frontier LLMs (“GPT-6.1 Terra,” “Gemini 4 Carbon,”
+“Kimi K3.1 Pro”). None confirmed against an official lab announcement;
+model names do not corroborate across sources. (<a href="https://llmgateway.io/timeline">llmgateway.io</a> · <a href="https://opper.ai/model-releases">opper.ai</a>)</p>
+</blockquote>
+<hr />
+<h2 id="what-to-watch-next-week">What to Watch Next Week</h2>
+<ul>
+<li>EU AI Act penalty-procedure consultation closes <strong>Nov
+9</strong> — watch for the Commission summary of responses.</li>
+<li>Per-vendor technical write-ups and patch-status confirmation for the
+Nov 5 agentic exploits (Zenity, Air Security, forever.security).</li>
+<li>Confirmation (or denial) of the OpenAI–Pierre Computer and
+Meta–Conductor deals and any regulatory review.</li>
+<li>Anthropic IPO timing and S-1 details, if a filing is confirmed.</li>
+<li>Official lab announcements + benchmarks for the early-November
+OpenAI image models and any implied frontier-LLM releases.</li>
+</ul>
+<hr />
+<p><em>Sources and working brief on file in this repo
+(<code>issues/brief-2026-45.md</code>). Reply with questions or topic
+requests.</em></p>
+</body>
+</html>
