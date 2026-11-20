@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>This Week in AI</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+html {
+background: #f0f5ff;
+}
+body {
+font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+font-size: 15px;
+line-height: 1.7;
+color: #1f2937;
+background: #ffffff;
+max-width: 660px;
+margin: 32px auto;
+padding: 0;
+border-radius: 8px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 4px 20px rgba(0,0,0,0.05);
+hyphens: none;
+}
+
+h1 {
+background: #eff6ff;
+color: #1e3a8a;
+margin: 0;
+padding: 30px 32px 24px;
+font-size: 1.4em;
+font-weight: 700;
+letter-spacing: -0.01em;
+line-height: 1.3;
+border-top: 5px solid #3b82f6;
+border-bottom: 1px solid #dbeafe;
+}
+
+h1 + p {
+font-size: 0.8em;
+color: #6b7280;
+background: #f8faff;
+margin: 0;
+padding: 10px 32px 16px;
+line-height: 1.8;
+border-bottom: 1px solid #e5e7eb;
+}
+
+h2, p, ul, blockquote, table, hr {
+margin-left: 32px;
+margin-right: 32px;
+}
+
+h2 {
+font-size: 0.7em;
+font-weight: 800;
+text-transform: uppercase;
+letter-spacing: 0.13em;
+color: #1e40af;
+background: #eff6ff;
+padding: 7px 12px;
+margin-top: 2em;
+margin-bottom: 0.8em;
+border-left: 3px solid #3b82f6;
+border-radius: 0 4px 4px 0;
+}
+
+h2 + blockquote {
+background: #eff6ff;
+border-left: 3px solid #3b82f6;
+border-radius: 0 6px 6px 0;
+padding: 14px 18px;
+margin-top: 0;
+margin-bottom: 1.25em;
+color: #1e3a8a;
+}
+h2 + blockquote p {
+margin: 0;
+margin-left: 0;
+margin-right: 0;
+font-style: normal;
+line-height: 1.65;
+}
+
+blockquote {
+background: #f0fdf4;
+border-left: 3px solid #34d399;
+border-radius: 0 6px 6px 0;
+padding: 10px 16px;
+margin-top: 6px;
+margin-bottom: 1em;
+color: #064e3b;
+}
+blockquote p {
+margin: 0;
+margin-left: 0;
+margin-right: 0;
+font-style: normal;
+line-height: 1.55;
+}
+blockquote strong {
+color: #065f46;
+}
+
+p {
+margin-top: 0.6em;
+margin-bottom: 0.6em;
+}
+p > strong:first-child {
+color: #111827;
+}
+p > em:only-child {
+color: #9ca3af;
+font-size: 0.88em;
+}
+
+hr {
+background: transparent;
+border: none;
+border-top: 1px solid #eff6ff;
+margin-top: 1.5em;
+margin-bottom: 1.5em;
+}
+
+ul {
+padding-left: 1.25em;
+margin-top: 0.5em;
+margin-bottom: 0.75em;
+}
+li {
+margin: 0.35em 0;
+color: #374151;
+}
+
+a {
+color: #2563eb;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+
+table {
+border-collapse: collapse;
+width: calc(100% - 64px);
+font-size: 0.88em;
+margin-top: 0.75em;
+margin-bottom: 1.25em;
+display: table;
+}
+th {
+background: #1e40af;
+color: #ffffff;
+padding: 9px 13px;
+text-align: left;
+font-size: 0.84em;
+font-weight: 600;
+letter-spacing: 0.03em;
+}
+td {
+padding: 8px 13px;
+border-bottom: 1px solid #eff6ff;
+vertical-align: top;
+}
+tr:nth-child(even) td {
+background: #f8faff;
+}
+
+hr:last-of-type + p {
+font-size: 0.8em;
+color: #9ca3af;
+padding-bottom: 28px;
+}
+
+code {
+font-family: "SF Mono", "Fira Code", Consolas, monospace;
+font-size: 0.86em;
+background: #eff6ff;
+color: #1e40af;
+padding: 1px 5px;
+border-radius: 3px;
+}
+</style>
+</head>
+<body>
+<h1 id="this-week-in-ai-week-of-november-16-2026">This Week in AI — Week
+of November 16, 2026</h1>
+<p><em>ISO Week 2026-47 · Distributed to: Secure Digital Core, Accenture
+Security</em> <em>Prepared by: Jacob Nosal |
+jacob.nosal@accenture.com</em></p>
+<hr />
+<h2 id="at-a-glance">At a Glance</h2>
+<blockquote>
+<p>A dense release week bracketed by two landmark events. On the model
+side, four labs shipped in 72 hours: <strong>OpenAI</strong> released
+<strong>GPT-6.2 Astra and Sol</strong> (Nov 17) — Astra is the first
+externally deployed OpenAI model that OpenAI itself rates <strong>“High”
+for AI self-improvement</strong> and <strong>“Critical” for cyber
+capability</strong> — while <strong>Microsoft</strong> (MAI Code 2, at
+Ignite), <strong>Alibaba</strong> (Qwen4-Max), and
+<strong>Google</strong> (Gemini 4 Neon) all pushed new models, almost
+all with price cuts. Bracketing the week: <strong>Nvidia</strong>’s
+abrupt CEO transition (Jensen Huang resigned Nov 11; CFO Colette Kress
+is interim CEO) landed just before its Q3 earnings, and
+<strong>Anthropic</strong>’s <strong>Nov 19 IPO</strong> priced the
+largest offering on record (~$81.3B raised, ticker <strong>ANT</strong>)
+at a ~$1.5–2T valuation — resolving the “Anthropic IPO” item we’ve
+carried on the watchlist since May. The through-line for SDC: frontier
+vendors are now self-labeling models as <em>critical</em> cyber-capable
+at the same moment the security market races to buy agentic red-teaming
+— the offensive and defensive curves are moving together.</p>
+</blockquote>
+<hr />
+<h2 id="model-releases-benchmarks">Model Releases &amp; Benchmarks</h2>
+<p><strong>OpenAI — GPT-6.2 Astra &amp; Sol (Nov 17)</strong> OpenAI
+shipped a flagship (Astra) and a cost-tier model (Sol). Astra’s API
+price is a vendor-reported <strong>$8 / $40 per 1M tokens</strong>
+(input/output), which OpenAI claims is ~20% below GPT-6 Astra; Sol holds
+the prior <strong>$2 / $10</strong> rate. Both are callable as
+<code>gpt-6.2-astra</code> / <code>gpt-6.2-sol</code> with an
+“Ultrafast” mode at launch and are available in ChatGPT Work and Codex
+on paid plans. Note a long-context surcharge: requests over 272k input
+tokens are reportedly billed at 2× input and 1.5× output across the
+whole request. (<a href="https://aiweekly.co/alerts/openai-ships-gpt-62-astra-at-840-20-below-gpt-6-astra">aiweekly.co</a>
+· <a href="https://www.ghacks.net/2026/11/18/openai-releases-gpt-6-2-astra-and-sol-with-lower-api-prices-and-ultrafast-for-pro-200/">gHacks</a>)</p>
+<blockquote>
+<p><strong>💡 Why it matters</strong> — A 20%-cheaper flagship plus a
+flat-priced mid-tier continues the downward cost pressure on agentic
+workloads. But the preparedness ratings (see Safety &amp; Research)
+matter more than the price for anyone running these in
+security-sensitive contexts — read both before standardizing on GPT-6.2
+in a pipeline.</p>
+</blockquote>
+<p><strong>Microsoft — MAI Code 2 &amp; MAI Code 2 Flash (Nov 17,
+Ignite)</strong> Microsoft’s in-house coding models launched at Ignite,
+available immediately in <strong>GitHub Copilot</strong> (Flash in
+limited Foundry preview). Microsoft claims Code 2 reaches ~<strong>98%
+of GPT-6.1 Sol’s performance at ~40% of the cost</strong> across four
+coding benchmarks (vendor-reported, and one source notes the comparison
+leans on promotional pricing). Models are hosted/API-only, not
+open-weight. (<a href="https://www.infoworld.com/article/4250152/microsoft-launches-mai-code-2-models-to-challenge-openai-and-anthropic-in-ai-coding.html">InfoWorld</a>
+· <a href="https://thenewstack.io/microsoft-mai-code-2/">The New
+Stack</a>)</p>
+<blockquote>
+<p><strong>💡 Why it matters</strong> — Microsoft is now competing with
+its own model partners on the coding tier inside Copilot. For clients,
+the signal is optionality and cost — but validate the “98% at 40%” claim
+against an independent coding benchmark before using it in a
+build-vs-buy case.</p>
+</blockquote>
+<p><strong>Alibaba — Qwen4-Max (Nov 16)</strong> Alibaba’s new
+<strong>closed-weight</strong> flagship (smaller Qwen4 models to get
+open weights later, no date given). Alibaba’s own “Work360” benchmark
+reports <strong>52.69 vs 47.74</strong> for the prior Qwen3.8-Max, with
+claimed 24–35% lower token usage. Independent trackers are more modest:
+Artificial Analysis places it around <strong>43 on its Intelligence
+Index</strong> (roughly mid-pack), behind the current Western frontier.
+Pricing is reported near <strong>$1.50 / $4.50 per 1M</strong>.
+<code>REVIEW:</code> Alibaba did not publish a system card or name an
+external red team at launch — note that gap if a client is weighing
+Qwen4-Max for a regulated workload. (<a href="https://www.alibabacloud.com/press-room/alibaba-unveils-qwen4-max">Alibaba
+Cloud</a> · <a href="https://www.datacamp.com/blog/qwen4-max">DataCamp</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — A credible,
+cheaper non-US frontier option keeps advancing, and clients evaluating
+open/China-origin model strategies now have another data point — with
+the attendant data-residency, export-control, and supply-chain
+questions. Treat the vendor benchmark as directional until an
+independent run lands.</p>
+</blockquote>
+<p><strong>Google — Gemini 4 Neon (Nov 18)</strong> Neon slots between
+Hydrogen and Carbon in the Gemini 4 family: a <strong>1M-token
+context</strong>, four thinking levels (Low → Extra High), priced at
+<strong>$3 / $15 per 1M</strong>. Google says Neon matches or beats the
+higher Carbon tier on coding, reasoning, and agentic tasks while running
+at “Flash speeds.” It’s in the Gemini app (AI Pro/Ultra) and Google
+Antigravity, replacing Argon. Note Carbon’s promotional <strong>$2 /
+$10</strong> pricing runs only through Nov 30, then rises to $4 / $20.
+(<a href="https://9to5google.com/2026/11/18/gemini-4-neon-announcement">9to5Google</a>)</p>
+<blockquote>
+<p><strong>💡 Why it matters</strong> — Neon is the “good enough at the
+frontier, cheaper and faster” tier aimed at high-frequency agentic
+workflows — the sweet spot for most enterprise automation. The
+time-boxed Carbon discount is a procurement nudge worth flagging to
+teams mid-evaluation.</p>
+</blockquote>
+<hr />
+<h2 id="safety-research">Safety &amp; Research</h2>
+<p><strong>OpenAI — GPT-6.2 preparedness ratings: first “High” for AI
+self-improvement (Nov 17)</strong> Alongside the GPT-6.2 launch, OpenAI
+reportedly rated <strong>Astra as the first externally deployed OpenAI
+model to meet the “High” threshold for AI self-improvement</strong>
+under its Preparedness Framework. Both Astra and Sol are reported as
+<strong>“Critical” for cybersecurity</strong> and <strong>“High” for
+biological/chemical</strong> capability. These are
+<strong>self-reported</strong> vendor ratings, not an external audit;
+one explainer ties the self-improvement rating to an internal test where
+Astra cut small-model training time ~43% (still below the best human
+result). <code>REVIEW:</code> confirm the exact thresholds against
+OpenAI’s own system card on the Deployment Safety Hub before quoting any
+of this to a client. (<a href="https://www.blockchain-council.org/ai/openai-flags-gpt-6-2-astra-for-ai-self-improvement-risk/">Blockchain
+Council</a> · <a href="https://cryptobriefing.com/openai-gpt-6-2-astra-self-improvement-threshold/">Crypto
+Briefing</a>)</p>
+<blockquote>
+<p><strong>🛡️ Why it matters for SDC</strong> — This is the first widely
+deployed frontier model a lab has publicly tagged “Critical” for cyber
+and “High” for self-improvement. Two SDC consequences: (1)
+threat-modeling for client AI programs should assume adversaries have
+access to a <em>self-described critical-cyber-capable</em> model; (2)
+the “self-reported, not audited” caveat is itself the talking point —
+vendor preparedness labels are a useful signal, not an assurance
+artifact, and shouldn’t substitute for independent evaluation in a
+client’s AI risk register.</p>
+</blockquote>
+<hr />
+<h2 id="policy-regulation">Policy &amp; Regulation</h2>
+<p><em>(No notable new AI policy actions this week.)</em> The standing
+watch items are unchanged: EU GPAI obligations and Article 50
+transparency rules have been enforceable since <strong>August 2,
+2026</strong>, and the <strong>Digital/AI Omnibus</strong> (which would
+push most high-risk dates to Dec 2027 / Aug 2028) remains the key open
+question — plan clients to the Act-as-adopted dates until the Omnibus
+relief is formally adopted. No new US federal action surfaced beyond the
+June 2026 Executive Order 14409. (<a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">European
+Commission</a>)</p>
+<hr />
+<h2 id="business-funding">Business &amp; Funding</h2>
+<p><strong>Anthropic — IPO prices as the largest on record (Nov
+19)</strong> Anthropic debuted on Nasdaq as <strong>ANT</strong>,
+pricing at <strong>$83/share</strong> and raising a reported
+<strong>~$81.3B</strong> — described as the largest IPO on record, ahead
+of SpaceX’s June listing. The stock opened around
+<strong>$111.50</strong> (+~35%) and closed its first day near
+<strong>$97.17</strong> (+~17%), with one report noting a ~5%
+after-hours slip. Valuation figures vary by metric and source — roughly
+<strong>$1.5T at pricing to ~$2T at the opening trade</strong>, with
+~$1.76T fully diluted at close — so quote a range, not a point. (<a href="https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html">CNBC</a>
+· <a href="https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo">CNN</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — This resolves the
+Anthropic-IPO watch item we’ve tracked since the May Series H. A
+publicly traded frontier lab means quarterly disclosure and a public
+cost-of-capital — more visibility into frontier-lab unit economics than
+the industry has ever had, useful grounding for client conversations
+about vendor durability and pricing trajectories. Use the valuation
+<em>range</em>, and hedge; first-day prints are not steady-state.</p>
+</blockquote>
+<p><strong>Nvidia — Jensen Huang resigns; Colette Kress named interim
+CEO (Nov 11), Q3 earnings Nov 17</strong> Per Nvidia’s <strong>SEC Form
+8-K</strong>, the board accepted Jensen Huang’s resignation as
+president, CEO, and board member <strong>effective immediately</strong>;
+CFO <strong>Colette Kress</strong> is serving as interim CEO (retaining
+her finance role) and Harvey C. Jones was named the company’s first
+Chair of the Board. The filing gives <strong>no reason</strong>; a
+permanent-CEO search is underway with no stated timeline. Nvidia
+reported Q3 FY27 earnings on Nov 17. <code>REVIEW:</code> press coverage
+ties the exit to a reported personal scandal and, in some outlets, to
+unverified national-security/espionage claims about a third party —
+these are <strong>press-reported allegations, not established in the
+filing</strong>; keep client-facing framing to the verified corporate
+facts (resignation + interim leadership) only. (<a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm">SEC
+8-K</a> · <a href="https://hothardware.com/news/nvidias-jensen-huang-resigns-after-33-years-interim-ceo-steps-in">HotHardware</a>)</p>
+<blockquote>
+<p><strong>🎯 Why it matters for Accenture</strong> — A leadership
+vacuum at the company underpinning essentially all frontier compute is a
+genuine supply-chain/governance variable, not gossip. For clients with
+multi-year AI-infrastructure commitments, “key-person and
+roadmap-continuity risk at the dominant accelerator vendor” is now a
+live line item — worth a brief in infrastructure-planning conversations,
+framed on the verified facts.</p>
+</blockquote>
+<hr />
+<h2 id="enterprise-security-implications">Enterprise &amp; Security
+Implications</h2>
+<p><strong>The offensive and defensive curves are converging — and the
+market is pricing it.</strong> Two signals this week point the same
+direction. First, OpenAI now self-labels a shipping model
+(<strong>GPT-6.2</strong>) as <strong>“Critical” for
+cybersecurity</strong> (see Safety &amp; Research) — a vendor conceding,
+on the record, that its deployed model clears a critical
+offensive-capability bar. Second, the AI-security market is buying the
+countermeasures: <strong>CrowdStrike</strong> recently announced
+acquisitions of <strong>Dreadnode</strong> (automated AI red-teaming —
+reportedly 100+ attack strategies including prompt injection and
+jailbreaks, targeting models, agent reasoning loops, apps, and MCP
+servers) and <strong>Fiddler AI</strong> (agent
+observability/explainability, to ship as Falcon Observe), alongside an
+<strong>“AI Kill Switch”</strong> to halt a rogue agent; combined terms
+were reported near ~$495M (not officially disclosed). (<a href="https://www.csoonline.com/article/4244500/crowdstrike-to-acquire-fiddler-dreadnode-to-extend-ai-security-across-agent-lifecycle.html">CSO
+Online</a> · <a href="https://thenextweb.com/news/crowdstrike-fiddler-dreadnode-acquisitions-ai-kill-switch">The
+Next Web</a>)</p>
+<blockquote>
+<p><strong>🛡️ Why it matters for SDC</strong> — Three concrete client
+talking points: (1) <strong>Red-team the agent, not just the
+model</strong> — tooling like Dreadnode tests reasoning loops,
+tool-calls, and MCP servers, which is where agentic risk actually lives;
+make “has this agent been adversarially tested end-to-end?” a standard
+review question. (2) <strong>Observability is becoming a control, not a
+nice-to-have</strong> — if you can’t trace <em>why</em> an agent acted,
+you can’t do incident response on it; Falcon Observe-style agent
+telemetry is heading toward table stakes. (3) <strong>A documented
+kill-switch / containment path for autonomous agents</strong> belongs in
+client agentic-AI rollouts now — the major EDR vendor shipping one is
+the market signaling that “stop the agent” is a required capability.</p>
+</blockquote>
+<hr />
+<h2 id="what-to-watch-next-week">What to Watch Next Week</h2>
+<ul>
+<li>Independent benchmarks (SWE-bench Verified, Artificial Analysis,
+OSWorld) for GPT-6.2 Astra/Sol, Gemini 4 Neon, and Qwen4-Max — vendor
+numbers only so far.</li>
+<li>OpenAI’s full <strong>GPT-6.2 system card</strong> on the Deployment
+Safety Hub — to confirm the “High self-improvement” and “Critical
+cybersecurity” ratings and the underlying evals.</li>
+<li><strong>ANT</strong> post-IPO trading, lock-up dynamics, and
+Anthropic’s first disclosures as a public company.</li>
+<li>Nvidia’s permanent-CEO search outcome and the read-through from its
+Q3 FY27 earnings.</li>
+<li>EU <strong>Digital/AI Omnibus</strong> — formal adoption vs. the
+Act-as-adopted high-risk dates (standing watch).</li>
+<li>Microsoft’s cyber-focused <strong>MAI</strong> security-model
+rollout, reported for December.</li>
+</ul>
+<hr />
+<p><em>Sources and working brief on file in this repo
+(<code>issues/brief-2026-47.md</code>). Reply with questions or topic
+requests.</em></p>
+</body>
+</html>
